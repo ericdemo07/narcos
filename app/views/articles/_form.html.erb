@@ -1,0 +1,136 @@
+<%= form_with model: @article, local: true do |form| %>
+
+    <% if @article.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@article.errors.count, "error") %> prohibited
+            this article from being saved:
+          </h2>
+          <ul>
+            <% @article.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <table>
+      <tr>
+        <td>
+          <p>
+            <%= form.label :first_name %><br>
+            <%= form.text_field :first_name %>
+          </p>
+        </td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :last_name %><br>
+            <%= form.text_field :last_name %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <%= form.label :city %><br>
+            <%= form.text_field :city %>
+          </p>
+        </td>
+        <td>
+          <p>
+            <%= form.label :state %><br>
+            <%= form.text_field :state %>
+          </p>
+        </td>
+        <td>
+          <p>
+            <%= form.label :postal_code %><br>
+            <%= form.number_field :postal_code %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <%= form.label :address_line_1 %><br>
+            <%= form.text_field :address_line_1 %>
+          </p>
+        </td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :address_line_2 %><br>
+            <%= form.text_field :address_line_2 %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :donation_amount %><br>
+            <%= form.number_field :donation_amount, :step => 0.01 %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :content %><br>
+            <%= form.text_area :content %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :img %><br>
+            <%= form.text_field :img %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <%= form.label :mail_id %><br>
+            <%= form.text_field :mail_id %>
+          </p>
+        </td>
+        <td></td>
+        <td>
+          <p>
+            <%= form.label :phone %><br>
+            <%= form.number_field :phone %>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+            <%= form.label :likes_count %><br>
+            <%= form.number_field :likes_count %>
+          </p>
+        </td>
+        <td>
+          <p>
+            <%= form.label :share_count %><br>
+            <%= form.number_field :share_count %>
+          </p>
+        </td>
+        <td>
+          <p>
+            <%= form.label :dob %><br>
+            <%= form.number_field :dob %>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>

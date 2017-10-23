@@ -1,0 +1,127 @@
+<table>
+  <tr>
+    <td>
+      <p>
+        <strong>First Name:</strong>
+        <%= @article.first_name %>
+      </p>
+    </td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Last Name:</strong>
+        <%= @article.last_name %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        <strong>City:</strong>
+        <%= @article.city %>
+      </p>
+    </td>
+    <td>
+      <p>
+        <strong>State:</strong>
+        <%= @article.state %>
+      </p>
+    </td>
+    <td>
+      <p>
+        <strong>Postal Code:</strong>
+        <%= @article.postal_code %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        <strong>Address Line 1:</strong>
+        <%= @article.address_line_1 %>
+      </p>
+    </td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Address Line 2:</strong>
+        <%= @article.address_line_2 %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Donation Amount:</strong>
+        <%= @article.donation_amount %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Content:</strong>
+        <%= @article.content %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Img:</strong>
+        <%= @article.img %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        <strong>Mail Id:</strong>
+        <%= @article.mail_id %>
+      </p>
+    </td>
+    <td></td>
+    <td>
+      <p>
+        <strong>Phone:</strong>
+        <%= @article.phone %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>
+        <strong>Likes count:</strong>
+        <%= @article.likes_count %>
+      </p>
+    </td>
+
+    <td>
+      <p>
+        <strong>Share count:</strong>
+        <%= @article.share_count %>
+      </p>
+    </td>
+    <td>
+      <p>
+        <strong>Dob:</strong>
+        <%= @article.dob %>
+      </p>
+    </td>
+  </tr>
+</table>
+
+  <h2>Comments</h2>
+  <%= render @article.comments %>
+
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
+
+  <%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
