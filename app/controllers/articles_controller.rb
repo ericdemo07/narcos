@@ -18,13 +18,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
-
-    if @article.save
-      redirect_to @article
-    else
-      render 'new'
-    end
+    @user = User.find(params[:user_id])
+    @article = @user.articles.create(article_params)
+    redirect_to user_path(@user)
   end
 
   def update

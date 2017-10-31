@@ -16,6 +16,7 @@ class CreateArticles < ActiveRecord::Migration[5.1]
       t.integer :likes_count
       t.integer :share_count
       t.date :dob
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

@@ -1,0 +1,25 @@
+<p>
+  <strong>First Name:</strong>
+  <%= @user.email %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%= @user.phone %>
+</p>
+<p>
+  <strong>AadharId:</strong>
+  <%= @user.aadharid %>
+</p>
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<h2>Articles</h2>
+<%= render @user.articles %>
+
+<h2>Add a article:</h2>
+<%= render 'articles/form' %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
