@@ -1,25 +1,51 @@
-<p>
-  <strong>First Name:</strong>
-  <%= @user.email %>
-</p>
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
-<p>
-  <strong>AadharId:</strong>
-  <%= @user.aadharid %>
-</p>
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<div class="container-fluid">
+  &nbsp;&nbsp;<div class="well"><h3>user details</h3></div>
 
-<h2>Articles</h2>
-<%= render @user.articles %>
 
-<h2>Add a article:</h2>
-<%= render 'articles/form' %>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>AadharId</th>
+      <th>Password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><%= @user.email %></td>
+      <td><%= @user.phone %></td>
+      <td><%= @user.aadharid %></td>
+      <td><%= @user.password %></td>
+    </tr>
+    </tbody>
+  </table>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <br><br>
+
+  <h3>existing articles</h3>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>first name</th>
+      <th>last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render @user.articles %>
+    </tbody>
+  </table>
+  <br><br>
+
+  <h2>add a new article</h2>
+  <br>
+  <%= render 'articles/form' %>
+  <br><br>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-default"><%= link_to 'View all articles', controller: 'articles' %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_user_path(@user) %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Back', users_path %></button>
+  </div>
+  <br><br>
+</div>

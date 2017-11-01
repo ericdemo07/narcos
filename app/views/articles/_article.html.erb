@@ -1,9 +1,5 @@
-<p>
-  <strong>First name:</strong>
-  <%= article.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= article.last_name %>
-</p>
+<tr>
+  <td><%= article.first_name %></td>
+  <td><%= article.last_name %></td>
+  <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_article_path(article) %></button></td>
+</tr>

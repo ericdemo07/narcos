@@ -1,50 +1,33 @@
-
-<h1>Listing articles</h1>
-
-<%= link_to 'New article', new_article_path %>
-
-<table>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>City</th>
-    <th>State</th>
-    <th>Postal Code</th>
-    <th>Address Line 1</th>
-    <th>Address Line 2</th>
-    <th>Donation Amount</th>
-    <th>Content</th>
-    <th>Img</th>
-    <th>Mail Id</th>
-    <th>Phone</th>
-    <th>Likes count</th>
-    <th>Share count</th>
-    <th>Dob</th>
-  </tr>
-
-  <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.first_name %></td>
-        <td><%= article.last_name %></td>
-        <td><%= article.city %></td>
-        <td><%= article.state %></td>
-        <td><%= article.postal_code %></td>
-        <td><%= article.address_line_1 %></td>
-        <td><%= article.address_line_2 %></td>
-        <td><%= article.donation_amount %></td>
-        <td><%= article.content %></td>
-        <td><%= article.img %></td>
-        <td><%= article.mail_id %></td>
-        <td><%= article.phone %></td>
-        <td><%= article.likes_count %></td>
-        <td><%= article.share_count %></td>
-        <td><%= article.dob %></td>
-
-        <td><%= link_to 'Show', article_path(article) %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article_path(article),
-                        method: :delete,
-                        data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-  <% end %>
-</table>
+<div class="container-fluid">
+  &nbsp;&nbsp;<div class="well"><h3>list of available articles</h3></div><br><br>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal Code</th>
+      <th>Mail Id</th>
+      <th>Phone</th>
+      <th>Dob</th>
+      <th>show</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.first_name %></td>
+          <td><%= article.last_name %></td>
+          <td><%= article.city %></td>
+          <td><%= article.state %></td>
+          <td><%= article.postal_code %></td>
+          <td><%= article.mail_id %></td>
+          <td><%= article.phone %></td>
+          <td><%= article.dob %></td>
+          <td><button type="button" class="btn btn-default"><%= link_to 'Show', article_path(article) %></button></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    puts "hello"
     @article = Article.find(params[:id])
   end
 

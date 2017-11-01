@@ -1,14 +1,9 @@
-<h1>Home Page</h1>
-<%= link_to 'View Users', controller: 'users' %>
-<%= link_to 'View Articles', controller: 'articles', class: 'btn 11btn-success' %>
-
 <div class="container-fluid">
-  <h1>Hello World!</h1>
-  <p>Resize the browser window to see the effect.</p>
-  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
-  <div class="row">
-    <div class="col-sm-6" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-sm-2" style="background-color:lavenderblush;">.col-sm-4</div>
-    <div class="col-sm-2" style="background-color:lavender;">.col-sm-4</div>
+  &nbsp;&nbsp;<div class="well"><h3>narcos</h3></div>
+  <br><br>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default"><%= link_to 'I am an user', controller: 'users' %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'I am a visitor', controller: 'articles' %></button>
+    <button type="button" class="btn btn-default"><%= link_to 'Hell, I am the admin', controller: 'admin' %></button>
   </div>
 </div>
