@@ -1,99 +1,98 @@
 <div class="container-fluid">
-  &nbsp;&nbsp;<div class="well"><h3>modify article details</h3></div>
   <br><br>
 
 
   <%= form_with(model: @article) do |form| %>
-    <div class="form-group">
-      <table class="table table-bordered">
-        <tbody>
-        <tr>
-          <td>
-            <label for="fname" class="control-label">First Name</label>
-            <div class="form-control-static"><%= form.text_field :first_name %></div>
-          </td>
-          <td></td>
-          <td>
-            <label for="lname" class="control-label">Last Name</label>
-            <div class="form-control-static"><%= form.text_field :last_name %></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="city" class="control-label">City</label>
-            <div class="form-control-static"><%= form.text_field :city %></div>
-          </td>
-          <td>
-            <label for="state" class="control-label">State</label>
-            <div class="form-control-static"><%= form.text_field :state %></div>
-          </td>
-          <td>
-            <label for="pcode" class="control-label">Postal Code</label>
-            <div class="form-control-static"><%= form.text_field :postal_code %></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="addrl1" class="control-label">Address line 1</label>
-            <div class="form-control-static"><%= form.text_field :address_line_1 %></div>
-          </td>
-          <td></td>
-          <td>
-            <label for="addrl2" class="control-label">Address line 2</label>
-            <div class="form-control-static"><%= form.text_field :address_line_2 %></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="damount" class="control-label">Donation amount</label>
-            <div class="form-control-static"><%= form.text_field :donation_amount %></div>
-          </td>
-          <td></td>
-          <td>
-            <label for="img" class="control-label">Image</label>
-            <div class="form-control-static"><%= form.text_field :img %></div>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <label for="content" class="control-label">Content</label>
-            <div class="form-control-static"><%= form.text_field :content %></div>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email" class="control-label">Mail Id</label>
-            <div class="form-control-static"><%= form.text_field :mail_id %></div>
-          </td>
-          <td></td>
-          <td>
-            <label for="phone" class="control-label">Phone</label>
-            <div class="form-control-static"><%= form.text_field :phone %></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="lcount" class="control-label">Likes count</label>
-            <div class="form-control-static"><%= form.text_field :likes_count %></div>
-          </td>
-          <td>
-            <label for="scount" class="control-label">Share count</label>
-            <div class="form-control-static"><%= form.text_field :share_count %></div>
-          </td>
-          <td>
-            <label for="dob" class="control-label">Date of birth</label>
-            <div class="form-control-static"><%= form.text_field :dob %></div>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-      <p>
-        <%= form.submit %>
-      </p>
-    </div>
-<% end %>
+      <div class="form-group">
+        <table class="table table-bordered">
+          <tbody>
+          <tr>
+            <td>
+              <label for="fname" class="control-label">First Name</label>
+              <div class="form-control-static"><%= form.text_field :first_name %></div>
+            </td>
+            <td></td>
+            <td>
+              <label for="lname" class="control-label">Last Name</label>
+              <div class="form-control-static"><%= form.text_field :last_name %></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city" class="control-label">City</label>
+              <div class="form-control-static"><%= form.text_field :city %></div>
+            </td>
+            <td>
+              <label for="state" class="control-label">State</label>
+              <div class="form-control-static"><%= form.text_field :state %></div>
+            </td>
+            <td>
+              <label for="pcode" class="control-label">Postal Code</label>
+              <div class="form-control-static"><%= form.text_field :postal_code %></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="addrl1" class="control-label">Address line 1</label>
+              <div class="form-control-static"><%= form.text_field :address_line_1 %></div>
+            </td>
+            <td></td>
+            <td>
+              <label for="addrl2" class="control-label">Address line 2</label>
+              <div class="form-control-static"><%= form.text_field :address_line_2 %></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="damount" class="control-label">Donation amount</label>
+              <div class="form-control-static"><%= form.text_field :donation_amount %></div>
+            </td>
+            <td></td>
+            <td>
+              <label for="img" class="control-label">Image</label>
+              <div class="form-control-static"><%= form.text_field :img %></div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <label for="content" class="control-label">Content</label>
+              <div class="form-control-static"><%= form.text_field :content %></div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email" class="control-label">Mail Id</label>
+              <div class="form-control-static"><%= form.text_field :mail_id %></div>
+            </td>
+            <td></td>
+            <td>
+              <label for="phone" class="control-label">Phone</label>
+              <div class="form-control-static"><%= form.text_field :phone %></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lcount" class="control-label">Likes count</label>
+              <div class="form-control-static"><%= form.text_field :likes_count %></div>
+            </td>
+            <td>
+              <label for="scount" class="control-label">Share count</label>
+              <div class="form-control-static"><%= form.text_field :share_count %></div>
+            </td>
+            <td>
+              <label for="dob" class="control-label">Date of birth</label>
+              <div class="form-control-static"><%= form.text_field :dob %></div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <p>
+          <%= form.submit %>
+        </p>
+      </div>
+  <% end %>
   <div class="btn-group">
     <button type="button" class="btn btn-default"><%= link_to 'Back', articles_path %></button>
   </div>
