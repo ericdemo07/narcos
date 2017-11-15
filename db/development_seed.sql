@@ -1,0 +1,17 @@
+--insert into users
+INSERT INTO users (phone, aadharid, created_at, updated_at, email, encrypted_password, reset_password_token, reset_password_sent_at, remember_created_at, sign_in_count, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip) VALUES (88487362, '3498894498984444', '2017-11-04 17:26:31.400504', '2017-11-05 16:30:47.331099', 'john.lennon@outlook.com', '$2a$11$uEBlluwdQil7KQfkeo.7cO5mGc8JYWOtou8su/gK16XxPYSMtEHiW', null, null, null, 3, '2017-11-05 16:30:47.330386', '2017-11-04 20:17:17.335538', '127.0.0.1', '127.0.0.1');
+INSERT INTO users (phone, aadharid, created_at, updated_at, email, encrypted_password, reset_password_token, reset_password_sent_at, remember_created_at, sign_in_count, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip) VALUES (99204933, '3445091903939399', '2017-11-04 20:51:50.726833', '2017-11-05 16:31:31.595920', 'tom.cruise@gmail.com', '$2a$11$6615hcVShOwgch7/kAQvUufVpu4fGRpQrEkf6NxWLRP2/.llXcpSW', null, null, null, 2, '2017-11-05 16:31:31.595329', '2017-11-04 20:51:50.729852', '127.0.0.1', '127.0.0.1');
+INSERT INTO users (phone, aadharid, created_at, updated_at, email, encrypted_password, reset_password_token, reset_password_sent_at, remember_created_at, sign_in_count, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip) VALUES (49282289, '2332989898989889', '2017-11-10 09:33:51.293928', '2017-11-10 09:34:15.662436', 'taylor.swift@gmail.com', '$2a$11$.DcjtDiD600LJNwzi6QqOuPhM9FZR3JZU4aucZ/YQpJmSqGiUGdUK', null, null, null, 1, '2017-11-10 09:33:51.297490', '2017-11-10 09:33:51.297490', '127.0.0.1', '127.0.0.1');
+
+
+
+
+
+
+
+
+--insert into articles
+INSERT INTO articles (first_name, last_name, city, state, postal_code, address_line_1, address_line_2, donation_amount, content, img, mail_id, phone, likes_count, share_count, dob, user_id, created_at, updated_at) VALUES ('Kate', 'Hudson', 'Topeka', 'Kansas', 322333, '#113/2', 'Esimos Palace', null, '', '', 'kate.hudson@aol.com', 83289908, null, null, null, 1, '2017-11-04 18:10:47.298289', '2017-11-05 16:37:12.090201');
+INSERT INTO articles (first_name, last_name, city, state, postal_code, address_line_1, address_line_2, donation_amount, content, img, mail_id, phone, likes_count, share_count, dob, user_id, created_at, updated_at) VALUES ('Timber', 'Joseph', 'Manhattan', 'Kansas', 432434, '#221/1', 'Old Street', 100, '', '', 'timber.joseph@outlook.com', 98986767, null, null, null, 1, '2017-11-04 20:28:58.070070', '2017-11-05 16:39:47.064517');
+INSERT INTO articles (first_name, last_name, city, state, postal_code, address_line_1, address_line_2, donation_amount, content, img, mail_id, phone, likes_count, share_count, dob, user_id, created_at, updated_at) VALUES ('Carlos', 'Kataka', 'Lawrence', 'Kansas', 657654, '#221/5', 'Esimos Palace', null, '', '', 'karlos.katana@gmail.com', 32132454, null, null, null, 1, '2017-11-04 20:48:00.236631', '2017-11-04 20:48:00.236631');
+INSERT INTO articles (first_name, last_name, city, state, postal_code, address_line_1, address_line_2, donation_amount, content, img, mail_id, phone, likes_count, share_count, dob, user_id, created_at, updated_at) VALUES ('Samuel', 'Ravan', 'Emporio', 'Kansas', 878766, '#12/11', '2nd Street', 339, '', '', 'samuel_ravan@gmail.com', 78578875, null, null, null, 2, '2017-11-05 16:33:53.908371', '2017-11-05 16:33:53.908371');
